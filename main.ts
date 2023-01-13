@@ -1,7 +1,10 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showIcon(IconNames.Happy)
+	
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showIcon(IconNames.Sad)
+	
 })
-basic.showIcon(IconNames.Yes)
+input.onGesture(Gesture.Shake, function () {
+    music.playSoundEffect(music.builtinSoundEffect(soundExpression.yawn), SoundExpressionPlayMode.UntilDone)
+})
+basic.showIcon(IconNames.Asleep)
